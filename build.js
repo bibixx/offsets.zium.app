@@ -9,7 +9,8 @@ const path = require("path");
         dirent.isFile() &&
         path.extname(dirent.name) === ".json" &&
         dirent.name !== "package.json" &&
-        dirent.name !== "index.json"
+        dirent.name !== "index.json" &&
+        dirent.name !== "vercel.json"
     )
     .map((dirent) =>
       dirent.name.substring(
