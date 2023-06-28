@@ -10,6 +10,7 @@ const path = require("path");
         path.extname(dirent.name) === ".json" &&
         dirent.name !== "package.json" &&
         dirent.name !== "index.json" &&
+        dirent.name !== "fallback.json" &&
         dirent.name !== "vercel.json"
     )
     .map((dirent) =>
